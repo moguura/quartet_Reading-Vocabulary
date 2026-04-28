@@ -64,9 +64,16 @@
     ruby {
         font-size: 1em;
     }
+    /* 基本のルビは赤色にする（問題文用） */
     rt {
         font-size: 0.6em;
         color: #e74c3c;
+    }
+
+    /* タイトル(h1)と指示文(p)の中にあるルビだけを黒色にする */
+    h1 rt, 
+    p.instruction rt {
+        color: #000000;
     }
 </style>
 </head>
