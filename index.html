@@ -75,13 +75,33 @@
     p.instruction rt {
         color: #000000;
     }
+    /* ページ切り替えボタンのデザイン */
+    .nav-links {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #3498db; /* ボタンの青色 */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .btn:hover {
+        background-color: #2980b9; /* マウスを乗せた時に少し濃くする */
+    }
 </style>
 </head>
 <body>
 
     <h1>L1 <ruby>読<rt>よ</rt></ruby>み<ruby>物<rt>もの</rt></ruby>１：<ruby>覚<rt>おぼ</rt></ruby>える<ruby>単語<rt>たんご</rt></ruby>チェック</h1>
     <p class="instruction"><ruby>声<rt>こえ</rt></ruby>に<ruby>出<rt>だ</rt></ruby>して<ruby>読<rt>よ</rt></ruby>んでみましょう。<ruby>文<rt>ぶん</rt></ruby>をクリックすると、ふりがなが<ruby>出<rt>で</rt></ruby>ます。</p>
-
+    <div class="nav-links">
+        <a href="L1_2.html" class="btn">Next ➡️</a>
+    </div>
     <details><summary>① 日本はやはり東京が一番おもしろいと思います。</summary>
         <div class="answer">① <ruby>日本<rt>にほん</rt></ruby>はやはり<ruby>東京<rt>とうきょう</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby>おもしろいと<ruby>思<rt>おも</rt></ruby>います。</div>
     </details>
