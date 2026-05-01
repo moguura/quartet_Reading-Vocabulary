@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L1-1_Reading-Vocabulary</title>
+<style>
+    body {
+        font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 1.5em;
+    }
+    .instruction {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #555;
+    }
+    details {
+        background: #ffffff;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    details:hover {
+        background: #fafafa;
+    }
+    summary {
+        font-size: 1.1em;
+        font-weight: bold;
+        list-style-type: none;
+        outline: none;
+    }
+    /* デフォルトの矢印を非表示にしてカスタムのテキストを追加 */
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    summary::after {
+        content: ' 🔽 答えを見る';
+        font-size: 0.8em;
+        color: #007BFF;
+        float: right;
+        font-weight: normal;
+    }
+    details[open] summary::after {
+        content: ' 🔼 閉じる';
+    }
+    .answer {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed #ccc;
+        font-size: 1.2em;
+        color: #27ae60;
+    }
+    ruby {
+        font-size: 1em;
+    }
+    /* 基本のルビは赤色にする（問題文用） */
+    rt {
+        font-size: 0.6em;
+        color: #e74c3c;
+    }
+
+    /* タイトル(h1)と指示文(p)の中にあるルビだけを黒色にする */
+    h1 rt, 
+    p.instruction rt {
+        color: #000000;
+    }
+</style>
+</head>
+<body>
+
+    <h1>L1 <ruby>読<rt>よ</rt></ruby>み<ruby>物<rt>もの</rt></ruby>１：<ruby>覚<rt>おぼ</rt></ruby>える<ruby>単語<rt>たんご</rt></ruby>チェック</h1>
+    <p class="instruction"><ruby>声<rt>こえ</rt></ruby>に<ruby>出<rt>だ</rt></ruby>して<ruby>読<rt>よ</rt></ruby>んでみましょう。<ruby>文<rt>ぶん</rt></ruby>をクリックすると、ふりがなが<ruby>出<rt>で</rt></ruby>ます。</p>
+
+    <details><summary>① 日本はやはり東京が一番おもしろいと思います。</summary>
+        <div class="answer">① <ruby>日本<rt>にほん</rt></ruby>はやはり<ruby>東京<rt>とうきょう</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby>おもしろいと<ruby>思<rt>おも</rt></ruby>います。</div>
+    </details>
+
+    <details><summary>② 私は食べられないものが多いが、特にトマトが嫌いだ。</summary>
+        <div class="answer">② <ruby>私<rt>わたし</rt></ruby>は<ruby>食<rt>た</rt></ruby>べられないものが<ruby>多<rt>おお</rt></ruby>いが、<ruby>特<rt>とく</rt></ruby>にトマトが<ruby>嫌<rt>きら</rt></ruby>いだ。</div>
+    </details>
+
+    <details><summary>③ 今年のスピーチコンテストで賞を取りたい。</summary>
+        <div class="answer">③ <ruby>今年<rt>ことし</rt></ruby>のスピーチコンテストで<ruby>賞<rt>しょう</rt></ruby>を<ruby>取<rt>と</rt></ruby>りたい。</div>
+    </details>
+
+    <details><summary>④ 日本のアニメに興味があったので、日本語の勉強を始めた。</summary>
+        <div class="answer">④ <ruby>日本<rt>にほん</rt></ruby>のアニメに<ruby>興味<rt>きょうみ</rt></ruby>があったので、<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>めた。</div>
+    </details>
+
+    <details><summary>⑤ しずかな環境で勉強したい。</summary>
+        <div class="answer">⑤ しずかな<ruby>環境<rt>かんきょう</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>したい。</div>
+    </details>
+
+    <details><summary>⑥ 彼女はだれにでも優しくて親切だ。</summary>
+        <div class="answer">⑥ <ruby>彼女<rt>かのじょ</rt></ruby>はだれにでも<ruby>優<rt>やさ</rt></ruby>しくて<ruby>親切<rt>しんせつ</rt></ruby>だ。</div>
+    </details>
+
+    <details><summary>⑦ 私が子どもの時、両親はとても厳しかった。</summary>
+        <div class="answer">⑦ <ruby>私<rt>わたし</rt></ruby>が<ruby>子<rt>こ</rt></ruby>どもの<ruby>時<rt>とき</rt></ruby>、<ruby>両親<rt>りょうしん</rt></ruby>はとても<ruby>厳<rt>きび</rt></ruby>しかった。</div>
+    </details>
+
+    <details><summary>⑧ 日本の料理、例えば、おすしや天ぷらなどが好きです。</summary>
+        <div class="answer">⑧ <ruby>日本<rt>にほん</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>、<ruby>例<rt>たと</rt></ruby>えば、おすしや<ruby>天<rt>てん</rt></ruby>ぷらなどが<ruby>好<rt>す</rt></ruby>きです。</div>
+    </details>
+
+    <details><summary>⑨ これは妹が描いてくれた絵です。</summary>
+        <div class="answer">⑨ これは<ruby>妹<rt>いもうと</rt></ruby>が<ruby>描<rt>か</rt></ruby>いてくれた<ruby>絵<rt>え</rt></ruby>です。</div>
+    </details>
+
+    <details><summary>⑩ 先生に作文を直してもらいました。</summary>
+        <div class="answer">⑩ <ruby>先生<rt>せんせい</rt></ruby>に<ruby>作文<rt>さくぶん</rt></ruby>を<ruby>直<rt>なお</rt></ruby>してもらいました。</div>
+    </details>
+
+    <details><summary>⑪ 彼は医者だ。また、研究者でもある。</summary>
+        <div class="answer">⑪ <ruby>彼<rt>かれ</rt></ruby>は<ruby>医者<rt>いしゃ</rt></ruby>だ。また、<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>でもある。</div>
+    </details>
+
+    <details><summary>⑫ 「山」という漢字が読めなくて、はずかしかった。</summary>
+        <div class="answer">⑫ 「<ruby>山<rt>やま</rt></ruby>」という<ruby>漢字<rt>かんじ</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めなくて、はずかしかった。</div>
+    </details>
+
+    <details><summary>⑬ オーストラリアの海はとても美しいそうだ。</summary>
+        <div class="answer">⑬ オーストラリアの<ruby>海<rt>うみ</rt></ruby>はとても<ruby>美<rt>うつく</rt></ruby>しいそうだ。</div>
+    </details>
+
+    <details><summary>⑭ ピカソの芸術的な絵が好きだ。</summary>
+        <div class="answer">⑭ ピカソの<ruby>芸術的<rt>げいじゅつてき</rt></ruby>な<ruby>絵<rt>え</rt></ruby>が<ruby>好<rt>す</rt></ruby>きだ。</div>
+    </details>
+
+    <details><summary>⑮ 彼女は子どもをとても愛している。</summary>
+        <div class="answer">⑮ <ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どもをとても<ruby>愛<rt>あい</rt></ruby>している。</div>
+    </details>
+
+    <details><summary>⑯ ガールフレンドを家族に紹介しました。</summary>
+        <div class="answer">⑯ ガールフレンドを<ruby>家族<rt>かぞく</rt></ruby>に<ruby>紹介<rt>しょうかい</rt></ruby>しました。</div>
+    </details>
+
+    <details><summary>⑰ 外国からお客さんが来るのですが、英語が得意な人はいませんか。</summary>
+        <div class="answer">⑰ <ruby>外国<rt>がいこく</rt></ruby>からお<ruby>客<rt>きゃく</rt></ruby>さんが<ruby>来<rt>く</rt></ruby>るのですが、<ruby>英語<rt>えいご</rt></ruby>が<ruby>得意<rt>とくい</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>はいませんか。</div>
+    </details>
+
+    <details><summary>⑱ 大学を卒業したら、日本の会社に就職したい。</summary>
+        <div class="answer">⑱ <ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>したら、<ruby>日本<rt>にほん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>したい。</div>
+    </details>
+
+    <details><summary>⑲ 東京には国際空港が 2 つある。</summary>
+        <div class="answer">⑲ <ruby>東京<rt>とうきょう</rt></ruby>には<ruby>国際空港<rt>こくさいくうこう</rt></ruby>が 2 つある。</div>
+    </details>
+
+    <details><summary>⑳ 映画祭毎年 5 月にフランスでカンヌ国際映画祭が開かれる。</summary>
+        <div class="answer">⑳ <ruby>映画祭<rt>えいがさい</rt></ruby> <ruby>毎年<rt>まいとし</rt></ruby> 5 <ruby>月<rt>がつ</rt></ruby>にフランスでカンヌ<ruby>国際映画祭<rt>こくさいえいがさい</rt></ruby>が<ruby>開<rt>ひら</rt></ruby>かれる。</div>
+    </details>
+
+</body>
+</html>
