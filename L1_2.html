@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Vocabulary</title>
+<style>
+    body {
+        font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 1.5em;
+    }
+    .instruction {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #555;
+    }
+    details {
+        background: #ffffff;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    details:hover {
+        background: #fafafa;
+    }
+    summary {
+        font-size: 1.1em;
+        font-weight: bold;
+        list-style-type: none;
+        outline: none;
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    summary::after {
+        content: ' 🔽 答えを見る';
+        font-size: 0.8em;
+        color: #007BFF;
+        float: right;
+        font-weight: normal;
+    }
+    details[open] summary::after {
+        content: ' 🔼 閉じる';
+    }
+    .answer {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed #ccc;
+        font-size: 1.2em;
+        color: #27ae60;
+    }
+    ruby {
+        font-size: 1em;
+    }
+    /* 基本のルビは赤色にする（問題文用） */
+    rt {
+        font-size: 0.6em;
+        color: #e74c3c;
+    }
+    /* タイトル(h1)と指示文(p)の中にあるルビだけを黒色にする */
+    h1 rt, 
+    p.instruction rt {
+        color: #000000;
+    }
+</style>
+</head>
+<body>
+
+    <h1>L1 <ruby>読<rt>よ</rt></ruby>み<ruby>物<rt>もの</rt></ruby>１：<ruby>覚<rt>おぼ</rt></ruby>える<ruby>単語<rt>たんご</rt></ruby>チェック</h1>
+    <p class="instruction"><ruby>漢字<rt>かんじ</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めるか<ruby>確認<rt>かくにん</rt></ruby>してみましょう。<ruby>文<rt>ぶん</rt></ruby>をクリックすると、ふりがなが<ruby>出<rt>で</rt></ruby>ます。</p>
+
+    <details><summary>① 友達の言葉は本当だった。</summary>
+        <div class="answer">① <ruby>友達<rt>ともだち</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>は<ruby>本当<rt>ほんとう</rt></ruby>だった。</div>
+    </details>
+
+    <details><summary>② 将来、海外で働きたいと思っています。</summary>
+        <div class="answer">② <ruby>将来<rt>しょうらい</rt></ruby>、<ruby>海外<rt>かいがい</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>きたいと<ruby>思<rt>おも</rt></ruby>っています。</div>
+    </details>
+
+    <details><summary>③ 昨日のテストには難しい問題が多かった。</summary>
+        <div class="answer">③ <ruby>昨日<rt>きのう</rt></ruby>のテストには<ruby>難<rt>むずか</rt></ruby>しい<ruby>問題<rt>もんだい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>かった。</div>
+    </details>
+
+    <details><summary>④ 困っている人を助けたいと思ってボランティアを始めた。</summary>
+        <div class="answer">④ <ruby>困<rt>こま</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>を<ruby>助<rt>たす</rt></ruby>けたいと<ruby>思<rt>おも</rt></ruby>ってボランティアを<ruby>始<rt>はじ</rt></ruby>めた。</div>
+    </details>
+
+    <details><summary>⑤ 出身はどちらですか。</summary>
+        <div class="answer">⑤ <ruby>出身<rt>しゅっしん</rt></ruby>はどちらですか。</div>
+    </details>
+
+    <details><summary>⑥ サッカーをしていた時、ころんでけがをしてしまった。</summary>
+        <div class="answer">⑥ サッカーをしていた<ruby>時<rt>とき</rt></ruby>、ころんでけがをしてしまった。</div>
+    </details>
+
+    <details><summary>⑦ 漢字のいい勉強方法を教えてください。</summary>
+        <div class="answer">⑦ <ruby>漢字<rt>かんじ</rt></ruby>のいい<ruby>勉強方法<rt>べんきょうほうほう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。</div>
+    </details>
+
+    <details><summary>⑧ 多くの人々が病気で苦しんでいます。</summary>
+        <div class="answer">⑧ <ruby>多<rt>おお</rt></ruby>くの<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>病気<rt>びょうき</rt></ruby>で<ruby>苦<rt>くる</rt></ruby>しんでいます。</div>
+    </details>
+
+    <details><summary>⑨ そのニュースを聞いてショックを受けた。</summary>
+        <div class="answer">⑨ そのニュースを<ruby>聞<rt>き</rt></ruby>いてショックを<ruby>受<rt>う</rt></ruby>けた。</div>
+    </details>
+
+    <details><summary>⑩ この店で働きたい理由を教えてください。</summary>
+        <div class="answer">⑩ この<ruby>店<rt>みせ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>きたい<ruby>理由<rt>りゆう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。</div>
+    </details>
+
+    <details><summary>⑪ 彼女は明るい性格なので、友達がたくさんいる。</summary>
+        <div class="answer">⑪ <ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るい<ruby>性格<rt>せいかく</rt></ruby>なので、<ruby>友達<rt>ともだち</rt></ruby>がたくさんいる。</div>
+    </details>
+
+    <details><summary>⑫ 明日、環境問題についての講演会があるそうです。</summary>
+        <div class="answer">⑫ <ruby>明日<rt>あした</rt></ruby>、<ruby>環境問題<rt>かんきょうもんだい</rt></ruby>についての<ruby>講演会<rt>こうえんかい</rt></ruby>があるそうです。</div>
+    </details>
+
+    <details><summary>⑬ 毎朝必ずジョギングをしています。</summary>
+        <div class="answer">⑬ <ruby>毎朝<rt>まいあさ</rt></ruby><ruby>必<rt>かなら</rt></ruby>ずジョギングをしています。</div>
+    </details>
+
+    <details><summary>⑭ 今日の宿題は簡単だったから、15分で終わった。</summary>
+        <div class="answer">⑭ <ruby>今日<rt>きょう</rt></ruby>の<ruby>宿題<rt>しゅくだい</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>だったから、15<ruby>分<rt>ふん</rt></ruby>で<ruby>終<rt>お</rt></ruby>わった。</div>
+    </details>
+
+    <details><summary>⑮ 私は料理が苦手なので、あまり作りません。</summary>
+        <div class="answer">⑮ <ruby>私<rt>わたし</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>が<ruby>苦手<rt>にがて</rt></ruby>なので、あまり<ruby>作<rt>つく</rt></ruby>りません。</div>
+    </details>
+
+    <details><summary>⑯ 今年の目標は新しい漢字を300字覚えることです。</summary>
+        <div class="answer">⑯ <ruby>今年<rt>ことし</rt></ruby>の<ruby>目標<rt>もくひょう</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しい<ruby>漢字<rt>かんじ</rt></ruby>を300<ruby>字<rt>じ</rt></ruby><ruby>覚<rt>おぼ</rt></ruby>えることです。</div>
+    </details>
+
+    <details><summary>⑰ この車には、最新の技術が使われています。</summary>
+        <div class="answer">⑰ この<ruby>車<rt>くるま</rt></ruby>には、<ruby>最新<rt>さいしん</rt></ruby>の<ruby>技術<rt>ぎじゅつ</rt></ruby>が<ruby>使<rt>つか</rt></ruby>われています。</div>
+    </details>
+
+    <details><summary>⑱ 研究の結果を出すためには、時間がかかります。</summary>
+        <div class="answer">⑱ <ruby>研究<rt>けんきゅう</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>を<ruby>出<rt>だ</rt></ruby>すためには、<ruby>時間<rt>じかん</rt></ruby>がかかります。</div>
+    </details>
+
+    <details><summary>⑲ 仕事ではTPO、つまり時、場所、場合に気をつけて話そう。</summary>
+        <div class="answer">⑲ <ruby>仕事<rt>しごと</rt></ruby>ではTPO、つまり<ruby>時<rt>とき</rt></ruby>、<ruby>場所<rt>ばしょ</rt></ruby>、<ruby>場合<rt>ばあい</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけて<ruby>話<rt>はな</rt></ruby>そう。</div>
+    </details>
+
+    <details><summary>⑳ 今年は夏休みに東京に行くことに決めた。</summary>
+        <div class="answer">⑳ <ruby>今年<rt>ことし</rt></ruby>は<ruby>夏休<rt>なつやす</rt></ruby>みに<ruby>東京<rt>とうきょう</rt></ruby>に<ruby>行<rt>い</rt></ruby>くことに<ruby>決<rt>き</rt></ruby>めた。</div>
+    </details>
+
+    <details><summary>㉑ 外国に行く時には、パスポートが必要です。</summary>
+        <div class="answer">㉑ <ruby>外国<rt>がいこく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>時<rt>とき</rt></ruby>には、パスポートが<ruby>必要<rt>ひつよう</rt></ruby>です。</div>
+    </details>
+
+    <details><summary>㉒ 私が尊敬する人は両親だ。</summary>
+        <div class="answer">㉒ <ruby>私<rt>わたし</rt></ruby>が<ruby>尊敬<rt>そんけい</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>は<ruby>両親<rt>りょうしん</rt></ruby>だ。</div>
+    </details>
+
+</body>
+</html>
