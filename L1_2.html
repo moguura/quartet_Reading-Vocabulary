@@ -73,13 +73,33 @@
     p.instruction rt {
         color: #000000;
     }
+    /* ページ切り替えボタンのデザイン */
+    .nav-links {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #3498db; /* ボタンの青色 */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .btn:hover {
+        background-color: #2980b9; /* マウスを乗せた時に少し濃くする */
+    }
 </style>
 </head>
 <body>
 
     <h1>L1 <ruby>読<rt>よ</rt></ruby>み<ruby>物<rt>もの</rt></ruby>１：<ruby>覚<rt>おぼ</rt></ruby>える<ruby>単語<rt>たんご</rt></ruby>チェック</h1>
     <p class="instruction"><ruby>漢字<rt>かんじ</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めるか<ruby>確認<rt>かくにん</rt></ruby>してみましょう。<ruby>文<rt>ぶん</rt></ruby>をクリックすると、ふりがなが<ruby>出<rt>で</rt></ruby>ます。</p>
-
+    <div class="nav-links">
+        <a href="index.html" class="btn">⬅️ Back</a>
+    </div>
     <details><summary>① 友達の言葉は本当だった。</summary>
         <div class="answer">① <ruby>友達<rt>ともだち</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>は<ruby>本当<rt>ほんとう</rt></ruby>だった。</div>
     </details>
