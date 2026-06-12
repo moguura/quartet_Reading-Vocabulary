@@ -1,0 +1,196 @@
+ご提示いただいた新しい問題文（ルビ付き）に合わせて、HTMLコード内の問題文①から㉑までを書き換えました。
+
+クリック前の問題文（`<summary>`タグ内）はルビなしのすっきりした表示にし、クリック後の答え（`<div class="answer">`内）に`<ruby>`タグを使った赤色のふりがなが表示される元の仕様をそのまま引き継いでいます。
+
+以下が修正した全コードです。コピーしてそのままご利用ください。
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Vocabulary</title>
+<style>
+    body {
+        font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 1.5em;
+    }
+    .instruction {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #555;
+    }
+    details {
+        background: #ffffff;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    details:hover {
+        background: #fafafa;
+    }
+    summary {
+        font-size: 1.1em;
+        font-weight: bold;
+        list-style-type: none;
+        outline: none;
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    summary::after {
+        content: ' 🔽 答えを見る';
+        font-size: 0.8em;
+        color: #007BFF;
+        float: right;
+        font-weight: normal;
+    }
+    details[open] summary::after {
+        content: ' 🔼 閉じる';
+    }
+    .answer {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed #ccc;
+        font-size: 1.2em;
+        color: #27ae60;
+    }
+    ruby {
+        font-size: 1em;
+    }
+    /* 基本のルビは赤色にする（問題文用） */
+    rt {
+        font-size: 0.6em;
+        color: #e74c3c;
+    }
+    /* タイトル(h1)と指示文(p)の中にあるルビだけを黒色にする */
+    h1 rt, 
+    p.instruction rt {
+        color: #000000;
+    }
+    /* ページ切り替えボタンのデザイン */
+    .nav-links {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #3498db; /* ボタンの青色 */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .btn:hover {
+        background-color: #2980b9; /* マウスを乗せた時に少し濃くする */
+    }
+</style>
+</head>
+<body>
+    <h1>L2 <ruby>読<rt>よ</rt></ruby>み<ruby>物<rt>もの</rt></ruby>１：<ruby>覚<rt>おぼ</rt></ruby>える<ruby>単語<rt>たんご</rt></ruby>チェック</h1>
+    <p class="instruction"><ruby>漢字<rt>かんじ</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めるか<ruby>確認<rt>かくにん</rt></ruby>してみましょう。<ruby>文<rt>ぶん</rt></ruby>をクリックすると、ふりがなが<ruby>出<rt>で</rt></ruby>ます。</p>
+    <div class="nav-links">
+        <a href="L2_1.html" class="btn">⬅️ Back</a>
+    </div>
+    <details><summary>① 拝啓 9月になり、東京も朝晩すずしくなってきました。</summary>
+        <div class="answer">① <ruby>拝啓<rt>はいけい</rt></ruby> 9<ruby>月<rt>がつ</rt></ruby>になり、<ruby>東京<rt>とうきょう</rt></ruby>も<ruby>朝晩<rt>あさばん</rt></ruby>すずしくなってきました。</div>
+    </details>
+
+    <details><summary>② 暑かったら、窓を開けてください。</summary>
+        <div class="answer">② <ruby>暑<rt>あつ</rt></ruby>かったら、<ruby>窓<rt>まど</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けてください。</div>
+    </details>
+
+    <details><summary>③ 子どもの頃、日本のアニメを見ていました。</summary>
+        <div class="answer">③ <ruby>子<rt>こ</rt></ruby>どもの<ruby>頃<rt>ころ</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>のアニメを<ruby>見<rt>み</rt></ruby>ていました。</div>
+    </details>
+
+    <details><summary>④ 夏休みは2週間ハワイで過ごした。</summary>
+        <div class="answer">④ <ruby>夏休<rt>なつやす</rt></ruby>みは2<ruby>週<rt>しゅう</rt></ruby><ruby>間<rt>かん</rt></ruby>ハワイで<ruby>過<rt>す</rt></ruby>ごした。</div>
+    </details>
+
+    <details><summary>⑤ 休みが短くてどこにも旅行に行けなかった。</summary>
+        <div class="answer">⑤ <ruby>休<rt>やす</rt></ruby>みが<ruby>短<rt>みじか</rt></ruby>くてどこにも<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>けなかった。</div>
+    </details>
+
+    <details><summary>⑥ 子どもの時から日本語を学びたいと思っていました。</summary>
+        <div class="answer">⑥ <ruby>子<rt>こ</rt></ruby>どもの<ruby>時<rt>とき</rt></ruby>から<ruby>日<rt>に</rt></ruby><ruby>本<rt>ほん</rt></ruby><ruby>語<rt>ご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>びたいと<ruby>思<rt>おモ</rt></ruby>っていました。</div>
+    </details>
+
+    <details><summary>⑦ リーさんが今晩のパーティーの準備をしてくれた。</summary>
+        <div class="answer">⑦ リーさんが<ruby>今晩<rt>こんばん</rt></ruby>のパーティーの<ruby>準<rt>じゅん</rt></ruby><ruby>備<rt>び</rt></ruby>をしてくれた。</div>
+    </details>
+
+    <details><summary>⑧ 考え方が同じ人もいるが、異なる人もいる。</summary>
+        <div class="answer">⑧ <ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>が<ruby>同<rt>おな</rt></ruby>じ<ruby>人<rt>ひと</rt></ruby>もいるが、<ruby>異<rt>こと</rt></ruby>なる<ruby>人<rt>ひと</rt></ruby>もいる。</div>
+    </details>
+
+    <details><summary>⑨ パーティーでスウェーデンの人と知り合った。</summary>
+        <div class="answer">⑨ パーティーでスウェーデンの<ruby>人<rt>ひと</rt></ruby>と<ruby>知<rt>し</rt></ruby>り<ruby>合<rt>あ</rt></ruby>った。</div>
+    </details>
+
+    <details><summary>⑩ 人の気持ちを理解するのは、簡単なことではない。</summary>
+        <div class="answer">⑩ <ruby>人<rt>ひと</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>理<rt>り</rt></ruby><ruby>解<rt>かい</rt></ruby>するのは、<ruby>簡単<rt>かんたん</rt></ruby>なことではない。</div>
+    </details>
+
+    <details><summary>⑪ 日本語の勉強を続けると、日本への興味が深まる。</summary>
+        <div class="answer">⑪ <ruby>日<rt>に</rt></ruby><ruby>本<rt>ほん</rt></ruby><ruby>語<rt>ご</rt></ruby>の<ruby>勉<rt>べん</rt></ruby><ruby>強<rt>きょう</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けると、<ruby>日<rt>に</rt></ruby><ruby>本<rt>ほん</rt></ruby>への<ruby>興<rt>きょう</rt></ruby><ruby>味<rt>み</rt></ruby>が<ruby>深<rt>ふか</rt></ruby>まる。</div>
+    </details>
+
+    <details><summary>⑫ 散歩している時に、新しい店を発見した。</summary>
+        <div class="answer">⑫ <ruby>散<rt>さん</rt></ruby><ruby>歩<rt>ぽ</rt></ruby>している<ruby>時<rt>とき</rt></ruby>に、<ruby>新<rt>あたら</rt></ruby>しい<ruby>店<rt>みせ</rt></ruby>を<ruby>発見<rt>はっけん</rt></ruby>した。</div>
+    </details>
+
+    <details><summary>⑬ 彼女が髪を切ったことに気がついた。</summary>
+        <div class="answer">⑬ <ruby>彼女<rt>かのじょ</rt></ruby>が<ruby>髪<rt>かみ</rt></ruby>を<ruby>切<rt>き</rt></ruby>ったことに<ruby>気<rt>き</rt></ruby>がついた。</div>
+    </details>
+
+    <details><summary>⑭ 週末には多くの人がこの公園に集まります。</summary>
+        <div class="answer">⑭ <ruby>週末<rt>しゅうまつ</rt></ruby>には<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>がこの<ruby>公園<rt>こうえん</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まります。</div>
+    </details>
+
+    <details><summary>⑮ 日本の大学で人気があるクラブ活動はテニスだろう。</summary>
+        <div class="answer">⑮ <ruby>日<rt>に</rt></ruby><ruby>本<rt>ほん</rt></ruby>の<ruby>大<rt>だい</rt></ruby><ruby>学<rt>がく</rt></ruby>で<ruby>人<rt>にん</rt></ruby><ruby>気<rt>き</rt></ruby>があるクラブ<ruby>活動<rt>かつどう</rt></ruby>はテニスだろう。</div>
+    </details>
+
+    <details><summary>⑯ クラスの友達をカラオケに誘った。</summary>
+        <div class="answer">⑯ クラスの<ruby>友達<rt>ともだち</rt></ruby>をカラオケに<ruby>誘<rt>さそ</rt></ruby>った。</div>
+    </details>
+
+    <details><summary>⑰ 外国では習慣の違いに気をつけなければいけない。</summary>
+        <div class="answer">⑰ <ruby>外<rt>がい</rt></ruby><ruby>国<rt>こく</rt></ruby>では<ruby>習<rt>しゅう</rt></ruby><ruby>慣<rt>かん</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>いに<ruby>気<rt>き</rt></ruby>をつけなければいけない。</div>
+    </details>
+
+    <details><summary>⑱ 機会があれば、ぜひ日本に遊びに来てください。</summary>
+        <div class="answer">⑱ <ruby>機<rt>き</rt></ruby><ruby>会<rt>かい</rt></ruby>があれば、ぜひ<ruby>日<rt>に</rt></ruby><ruby>本<rt>ほん</rt></ruby>に<ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>き</rt></ruby>てください。</div>
+    </details>
+
+    <details><summary>⑲ 書きやすいので、Ｔ社のペンが気に入っている。</summary>
+        <div class="answer">⑲ <ruby>書<rt>か</rt></ruby>きやすいので、Ｔ<ruby>社<rt>しゃ</rt></ruby>のペンが<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>っている。</div>
+    </details>
+
+    <details><summary>⑳ 「ありがとう」とリーさんに伝えてください。</summary>
+        <div class="answer">⑳ 「ありがとう」とリーさんに<ruby>伝<rt>つた</rt></ruby>えてください。</div>
+    </details>
+
+    <details><summary>㉑ では、お体を大切になさってください。 敬具</summary>
+        <div class="answer">㉑ では、お<ruby>体<rt>からだ</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>になさってください。 <ruby>敬<rt>けい</rt></ruby><ruby>具<rt>ぐ</rt></ruby></div>
+    </details>
+
+</body>
+</html>
+
+```
