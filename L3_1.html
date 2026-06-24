@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Vocabulary</title>
+<style>
+    body {
+        font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 1.5em;
+    }
+    .instruction {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #555;
+    }
+    details {
+        background: #ffffff;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    details:hover {
+        background: #fafafa;
+    }
+    summary {
+        font-size: 1.1em;
+        font-weight: bold;
+        list-style-type: none;
+        outline: none;
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    summary::after {
+        content: ' 🔽 答えを見る';
+        font-size: 0.8em;
+        color: #007BFF;
+        float: right;
+        font-weight: normal;
+    }
+    details[open] summary::after {
+        content: ' 🔼 閉じる';
+    }
+    .answer {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed #ccc;
+        font-size: 1.2em;
+        color: #27ae60;
+    }
+    ruby {
+        font-size: 1em;
+    }
+    /* 基本のルビは赤色にする（問題文用） */
+    rt {
+        font-size: 0.6em;
+        color: #e74c3c;
+    }
+    /* タイトル(h1)と指示文(p)の中にあるルビだけを黒色にする */
+    h1 rt, 
+    p.instruction rt {
+        color: #000000;
+    }
+    /* ページ切り替えボタンのデザイン */
+    .nav-links {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #3498db; /* ボタンの青色 */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .btn:hover {
+        background-color: #2980b9; /* マウスを乗せた時に少し濃くする */
+    }
+</style>
+</head>
+<body>
+    <h1>L3 <ruby>読<rt>よ</rt></ruby>み<ruby>物<rt>もの</rt></ruby>１：<ruby>覚<rt>おぼ</rt></ruby>える<ruby>単語<rt>たんご</rt></ruby>チェック</h1>
+    <p class="instruction"><ruby>漢字<rt>かんじ</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めるか<ruby>確認<rt>かくにん</rt></ruby>してみましょう。<ruby>文<rt>ぶん</rt></ruby>をクリックすると、ふりがなが<ruby>出<rt>で</rt></ruby>ます。</p>
+    <div class="nav-links">
+        <a href="L2_2.html" class="btn">⬅️ Back</a>
+    </div>
+    <details><summary>① 登山の経験は一回もありません。</summary>
+        <div class="answer">① <ruby>登山<rt>とざん</rt></ruby>の<ruby>経験<rt>けいけん</rt></ruby>は<ruby>一回<rt>いっかい</rt></ruby>もありません。</div>
+    </details>
+
+    <details><summary>② 多くの外国人が京都を訪れる。</summary>
+        <div class="answer">② <ruby>多<rt>おお</rt></ruby>くの<ruby>外国人<rt>がいこくじん</rt></ruby>が<ruby>京都<rt>きょうと</rt></ruby>を<ruby>訪<rt>おとず</rt></ruby>れる。</div>
+    </details>
+
+    <details><summary>③ ハトは平和の象徴だと言われている。</summary>
+        <div class="answer">③ ハトは<ruby>平和<rt>へいわ</rt></ruby>の<ruby>象徴<rt>しょうちょう</rt></ruby>だと<ruby>言<rt>い</rt></ruby>われている。</div>
+    </details>
+
+    <details><summary>④ 日本語が学べるウェブサイトに登録した。</summary>
+        <div class="answer">④ <ruby>日本語<rt>にほんご</rt></ruby>が<ruby>学<rt>まな</rt></ruby>べるウェブサイトに<ruby>登録<rt>とうろく</rt></ruby>した。</div>
+    </details>
+
+    <details><summary>⑤ インターネットには情報が多い。</summary>
+        <div class="answer">⑤ インターネットには<ruby>情報<rt>じょうほう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。</div>
+    </details>
+
+    <details><summary>⑥ 富士山に登ったことがありますか。</summary>
+        <div class="answer">⑥ <ruby>富士山<rt>ふじさん</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ったことがありますか。</div>
+    </details>
+
+    <details><summary>⑦ 日本で一般的な映画料金は、大人1,900円、子ども1,000円だ。</summary>
+        <div class="answer">⑦ <ruby>日本<rt>にほん</rt></ruby>で<ruby>一般的<rt>いっぱんてき</rt></ruby>な<ruby>映画料金<rt>えいがりょうきん</rt></ruby>は、<ruby>大人<rt>おとな</rt></ruby>1,900<ruby>円<rt>えん</rt></ruby>、<ruby>子<rt>こ</rt></ruby>ども1,000<ruby>円<rt>えん</rt></ruby>だ。</div>
+    </details>
+
+    <details><summary>⑧ 私の大学には約３万人の学生がいます。</summary>
+        <div class="answer">⑧ <ruby>私<rt>わたし</rt></ruby>の<ruby>大学<rt>だいがく</rt></ruby>には<ruby>約<rt>やく</rt></ruby>３<ruby>万人<rt>まんにん</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>がいます。</div>
+    </details>
+
+    <details><summary>⑨ 父へのプレゼントに青いネクタイを選びました。</summary>
+        <div class="answer">⑨ <ruby>父<rt>ちち</rt></ruby>へのプレゼントに<ruby>青<rt>あお</rt></ruby>いネクタイを<ruby>選<rt>えら</rt></ruby>びました。</div>
+    </details>
+
+    <details><summary>⑩ この山の山頂までは２時間くらいかかる。</summary>
+        <div class="answer">⑩ この<ruby>山<rt>やま</rt></ruby>の<ruby>山頂<rt>さんちょう</rt></ruby>までは２<ruby>時間<rt>じかん</rt></ruby>くらいかかる。</div>
+    </details>
+
+    <details><summary>⑪ 日本の旅館に泊まってみたい。</summary>
+        <div class="answer">⑪ <ruby>日本<rt>にほん</rt></ruby>の<ruby>旅館<rt>りょかん</rt></ruby>に<ruby>泊<rt>と</rt></ruby>まってみたい。</div>
+    </details>
+
+    <details><summary>⑫ 夏休みはボランティア活動に参加しようと思っている。</summary>
+        <div class="answer">⑫ <ruby>夏休<rt>なつやす</rt></ruby>みはボランティア<ruby>活動<rt>かつどう</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>しようと<ruby>思<rt>おモ</rt></ruby>っている。</div>
+    </details>
+
+    <details><summary>⑬ 海外旅行の時はクレジットカードを２枚持っていくと安心だ。</summary>
+        <div class="answer">⑬ <ruby>海外旅行<rt>かいがいりょこう</rt></ruby>の<ruby>時<rt>とき</rt></ruby>はクレジットカードを２<ruby>枚<rt>まい</rt></ruby><ruby>持<rt>も</rt></ruby>っていくと<ruby>安心<rt>あんしん</rt></ruby>だ。</div>
+    </details>
+
+    <details><summary>⑭ インターネットでホテルを予約した。</summary>
+        <div class="answer">⑭ インターネットでホテルを<ruby>予約<rt>よやく</rt></ruby>した。</div>
+    </details>
+
+    <details><summary>⑮ ヨーロッパ旅行の計画を立てたい。</summary>
+        <div class="answer">⑮ ヨーロッパ<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てたい。</div>
+    </details>
+
+    <details><summary>⑯ このスーツケースは丈夫でこわれにくい。</summary>
+        <div class="answer">⑯ このスーツケースは<ruby>丈夫<rt>じょうぶ</rt></ruby>でこわれにくい。</div>
+    </details>
+
+    <details><summary>⑰ 授業でわからなかった点を先生に質問した。</summary>
+        <div class="answer">⑰ <ruby>授業<rt>じゅぎょう</rt></ruby>でわからなかった<ruby>点<rt>てん</rt></ruby>を<ruby>先生<rt>せんせい</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>した。</div>
+    </details>
+
+    <details><summary>⑱ 日本は東京や京都が有名だが、その他にもいいところはたくさんある。</summary>
+        <div class="answer">⑱ <ruby>日本<rt>にほん</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>や<ruby>京都<rt>きょうと</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>だが、その<ruby>他<rt>ほか</rt></ruby>にもいいところはたくさんある。</div>
+    </details>
+
+    <details><summary>⑲ きれいな川をゴミで汚さないでください。</summary>
+        <div class="answer">⑲ きれいな<ruby>川<rt>かわ</rt></ruby>をゴミで<ruby>汚<rt>よご</rt></ruby>さないでください。</div>
+    </details>
+
+    <details><summary>⑳ 社会のルールは守らなくてはいけない。</summary>
+        <div class="answer">⑳ <ruby>社会<rt>しゃかい</rt></ruby>のルールは<ruby>守<rt>まom</rt></ruby>らなくてはいけない。</div>
+    </details>
+
+    <details><summary>㉑ 中国ではいろいろなお茶を味わうことができる。</summary>
+        <div class="answer">㉑ <ruby>中国<rt>ちゅうごく</rt></ruby>ではいろいろなお<ruby>茶<rt>ちゃ</rt></ruby>を<ruby>味わ<rt>あじわ</rt></ruby>うことができる。</div>
+    </details>
+
+</body>
+</html>
