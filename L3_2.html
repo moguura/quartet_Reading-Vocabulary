@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Vocabulary</title>
+<style>
+    body {
+        font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 1.5em;
+    }
+    .instruction {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #555;
+    }
+    details {
+        background: #ffffff;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    details:hover {
+        background: #fafafa;
+    }
+    summary {
+        font-size: 1.1em;
+        font-weight: bold;
+        list-style-type: none;
+        outline: none;
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    summary::after {
+        content: ' 🔽 答えを見る';
+        font-size: 0.8em;
+        color: #007BFF;
+        float: right;
+        font-weight: normal;
+    }
+    details[open] summary::after {
+        content: ' 🔼 閉じる';
+    }
+    .answer {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed #ccc;
+        font-size: 1.2em;
+        color: #27ae60;
+    }
+    ruby {
+        font-size: 1em;
+    }
+    /* 基本のルビは赤色にする（問題文用） */
+    rt {
+        font-size: 0.6em;
+        color: #e74c3c;
+    }
+    /* タイトル(h1)と指示文(p)の中にあるルビだけを黒色にする */
+    h1 rt, 
+    p.instruction rt {
+        color: #000000;
+    }
+    /* ページ切り替えボタンのデザイン */
+    .nav-links {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #3498db; /* ボタンの青色 */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .btn:hover {
+        background-color: #2980b9; /* マウスを乗せた時に少し濃くする */
+    }
+</style>
+</head>
+<body>
+
+    <h1>L3 <ruby>読<rt>よ</rt></ruby>み<ruby>物<rt>もの</rt></ruby>２：<ruby>覚<rt>おぼ</rt></ruby>える<ruby>単語<rt>たんご</rt></ruby>チェック</h1>
+    <p class="instruction"><ruby>漢字<rt>かんじ</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めるか<ruby>確認<rt>かくにん</rt></ruby>してみましょう。<ruby>文<rt>ぶん</rt></ruby>をクリックすると、ふりがなが<ruby>出<rt>で</rt></ruby>ます。</p>
+    <div class="nav-links">
+        <a href="L3_1.html" class="btn">⬅️ Back</a>
+    </div>
+    <details><summary>① 桜の花を見ると、春を感じる。</summary>
+        <div class="answer">① <ruby>桜<rt>さくら</rt></ruby>の<ruby>花<rt>はな</rt></ruby>を<ruby>見<rt>み</rt></ruby>ると、<ruby>春<rt>はる</rt></ruby>を<ruby>感<rt>かん</rt></ruby>じる。</div>
+    </details>
+
+    <details><summary>② 値段が安くても、サービスが悪ければ客は来ないだろう。</summary>
+        <div class="answer">② <ruby>値段<rt>ねだん</rt></ruby>が<ruby>安<rt>やす</rt></ruby>くても、サービスが<ruby>悪<rt>わる</rt></ruby>ければ<ruby>客<rt>きゃく</rt></ruby>は<ruby>来<rt>こ</rt></ruby>ないだろう。</div>
+    </details>
+
+    <details><summary>③ 趣味が同じだったので、彼と仲よくなりました。</summary>
+        <div class="answer">③ <ruby>趣味<rt>しゅみ</rt></ruby>が<ruby>同<rt>おな</rt></ruby>じだったので、<ruby>彼<rt>かれ</rt></ruby>と<ruby>仲<rt>なか</rt></ruby>よくなりました。</div>
+    </details>
+
+    <details><summary>④ 参加者の数が少なくて、その旅行はキャンセルになった。</summary>
+        <div class="answer">④ <ruby>参加者<rt>さんかしゃ</rt></ruby>の<ruby>数<rt>かず</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくて、その<ruby>旅行<rt>りょこう</rt></ruby>はキャンセルになった。</div>
+    </details>
+
+    <details><summary>⑤ 東京には様々な国から来た人が住んでいる。</summary>
+        <div class="answer">⑤ <ruby>東京<rt>とうきょう</rt></ruby>には<ruby>様々<rt>さまざま</rt></ruby>な<ruby>国<rt>くに</rt></ruby>から<ruby>来<rt>き</rt></ruby>た<ruby>人<rt>ひと</rt></ruby>が<ruby>住<rt>す</rt></ruby>んでいる。</div>
+    </details>
+
+    <details><summary>⑥ この会社は英語ができる人を求めている。</summary>
+        <div class="answer">⑥ この<ruby>会社<rt>かいしゃ</rt></ruby>は<ruby>英語<rt>えいご</rt></ruby>ができる<ruby>人<rt>ひと</rt></ruby>を<ruby>求<rt>もと</rt></ruby>めている。</div>
+    </details>
+
+    <details><summary>⑦ 日本の特徴の一つは、山が多いことだ。</summary>
+        <div class="answer">⑦ <ruby>日本<rt>にほん</rt></ruby>の<ruby>特徴<rt>とくちょう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つは、<ruby>山<rt>やま</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いことだ。</div>
+    </details>
+
+    <details><summary>⑧ 彼女の魅力は、いつもみんなに親切なところだ。</summary>
+        <div class="answer">⑧ <ruby>彼女<rt>かのじょ</rt></ruby>の<ruby>魅力<rt>みりょく</rt></ruby>は、いつもみんなに<ruby>親切<rt>しんせつ</rt></ruby>なところだ。</div>
+    </details>
+
+    <details><summary>⑨ 大きい動物園にはいろいろな種類の動物がいる。</summary>
+        <div class="answer">⑨ <ruby>大<rt>おお</rt></ruby>きい<ruby>動物園<rt>どうぶつえん</rt></ruby>にはいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>動物<rt>どうぶつ</rt></ruby>がいる。</div>
+    </details>
+
+    <details><summary>⑩ みんなが席に着いてから、食事を始めましょう。</summary>
+        <div class="answer">⑩ みんなが<ruby>席<rt>せき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いてから、<ruby>食事<rt>しょくじ</rt></ruby>を<ruby>始<rt>はじめ</rt></ruby>ましょう。</div>
+    </details>
+
+    <details><summary>⑪ 前は普通の会社員でしたが、今は大学でビジネスを教えています。</summary>
+        <div class="answer">⑪ <ruby>前<rt>まえ</rt></ruby>は<ruby>普通<rt>ふつう</rt></ruby>の<ruby>会社員<rt>かいしゃいん</rt></ruby>でしたが、<ruby>今<rt>いま</rt></ruby>は<ruby>大学<rt>だいがく</rt></ruby>でビジネスを<ruby>教<rt>おし</rt></ruby>えています。</div>
+    </details>
+
+    <details><summary>⑫ 彼は来週のテストのことをずっと気にしている。</summary>
+        <div class="answer">⑫ <ruby>彼<rt>かれ</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>のテストのことをずっと<ruby>気<rt>き</rt></ruby>にしている。</div>
+    </details>
+
+    <details><summary>⑬ あの店のパスタは量が多いので、全部食べられない。</summary>
+        <div class="answer">⑬ あの<ruby>店<rt>みせ</rt></ruby>のパスタは<ruby>量<rt>りょう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いので、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>食<rt>た</rt></ruby>べられない。</div>
+    </details>
+
+    <details><summary>⑭ 漢字を覚えるためには何回も書くことが必要だ。</summary>
+        <div class="answer">⑭ <ruby>漢字<rt>かんじ</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えるためには<ruby>何回<rt>なんかい</rt></ruby>も<ruby>書<rt>か</rt></ruby>くことが<ruby>必要<rt>ひつよう</rt></ruby>だ。</div>
+    </details>
+
+    <details><summary>⑮ 留学に必要な金額は全部でいくらですか。</summary>
+        <div class="answer">⑮ <ruby>留学<rt>りゅうがく</rt></ruby>に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>金額<rt>きんがく</rt></ruby>は<ruby>全部<rt>ぜんぶ</rt></ruby>でいくらですか。</div>
+    </details>
+
+    <details><summary>⑯ 疲れていたので、おふろに入ってすぐに寝た。</summary>
+        <div class="answer">⑯ <ruby>疲<rt>つか</rt></ruby>れていたので、おふろに<ruby>入<rt>はい</rt></ruby>ってすぐに<ruby>寝<rt>ね</rt></ruby>た。</div>
+    </details>
+
+    <details><summary>⑰ ストレスを感じた時は、息抜きをしたほうがいい。</summary>
+        <div class="answer">⑰ ストレスを<ruby>感<rt>かん</rt></ruby>じた<ruby>時<rt>とき</rt></ruby>は、<ruby>息抜<rt>いきぬ</rt></ruby>きをしたほうがいい。</div>
+    </details>
+
+    <details><summary>⑱ カラオケで大声で歌って、ストレスを解消した。</summary>
+        <div class="answer">⑱ カラオケで<ruby>大声<rt>おおごえ</rt></ruby>で<ruby>歌<rt>うた</rt></ruby>って、ストレスを<ruby>解消<rt>かいしょう</rt></ruby>した。</div>
+    </details>
+
+    <details><summary>⑲ 外国語のクラスではよく話すので、クラスメートと親しくなれる。</summary>
+        <div class="answer">⑲ <ruby>外国語<rt>がいこくご</rt></ruby>のクラスではよく<ruby>話<rt>はな</rt></ruby>するので、クラスメートと<ruby>親<rt>した</rt></ruby>しくなれる。</div>
+    </details>
+
+    <details><summary>⑳ 原宿には独特なファッションの人が多い。</summary>
+        <div class="answer">⑳ <ruby>原宿<rt>はらじゅく</rt></ruby>には<ruby>独特<rt>どくとく</rt></ruby>なファッションの<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。</div>
+    </details>
+
+    <details><summary>㉑ あのカフェは雰囲気がよくて、リラックスできる。</summary>
+        <div class="answer">㉑ あのカフェは<ruby>雰囲気<rt>ふんいき</rt></ruby>がよくて、リラックスできる。</div>
+    </details>
+
+</body>
+</html>
